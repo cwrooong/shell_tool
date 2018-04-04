@@ -8,4 +8,9 @@ DATE=`date +%Y%m%d`
 TIME=`date +%k:%M:%S`
 #
 #####################################################
-#gather 
+#gather performence statistics
+#
+USERS=`uptime | sed 's/users.*$//' | gawk '{print $NF}'`
+LOAD=`uptiem | gawk '{print $NF}'`
+#
+FREE=`vmstat 1 2 | sed `
