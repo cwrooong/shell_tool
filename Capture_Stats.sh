@@ -10,8 +10,8 @@ TIME=`date +%k:%M:%S`
 #####################################################
 #gather performence statistics
 #
-USERS=`uptime | sed 's/users.*$//' | gawk '{print $NF}'`
-LOAD=`uptiem | gawk '{print $NF}'`
+USERS=`uptime | sed 's/users.*$//' | gawk '{print $NF}'` ##user number
+LOAD=`uptime | gawk '{print $NF}'`                       ##last 15 min average 
 #
 FREE=`vmstat 1 2 | sed -n '/[0-9]/p' | sed -n '2p' | gawk '{print $4}'`
 IDLE=`vmstat 1 2 | sed -n '/[0-9]/p' | sed -n '2p' | gawk '{print $15}'`
