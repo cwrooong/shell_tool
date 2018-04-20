@@ -7,4 +7,4 @@ Using shell to make system manage easier
 Snapshot:创建系统快照，监测系统统计数据
 
 Capture_stat_2:捕获状态系统统计报告
-Report_2：发送
+Report_stat_2：发送报告
